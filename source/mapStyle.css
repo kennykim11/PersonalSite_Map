@@ -1,0 +1,166 @@
+/* === UNIVERSAL === */
+html, body {
+    margin: 0;
+	height: 100%;
+    overflow: hidden;
+}
+
+/* Whiteout */
+.whiteout {
+    position: absolute;
+    z-index:99999;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    font-family: Arial, sans-serif;
+    font-weight: lighter;
+    text-align: center;
+
+    /*visibility: hidden;
+    opacity: 0;*/
+    transition: visibility 0s 2s, opacity 2s linear;
+}
+
+.whiteout #topText{
+    font-size: 30pt;
+    padding-top: 15%;
+    margin-bottom: 0pt;
+}
+
+.whiteout #bottomText{
+    font-size: 50pt;
+    bottom: 15%;
+    margin-top: 0pt;
+}
+
+#mapObject {
+    height: 100vh;
+    width: 100vw;
+}
+
+
+/* Pin */
+.pinNat {
+    position: absolute;
+    content: '';
+    background-color: red;
+    border-radius: 50% 50% 50% 0;
+    top: -20px;
+    left: -10px;
+    width: 20px;
+    height: 20px;
+    transform: rotate(-45deg);
+}
+
+.pin {
+    position: absolute;
+    width: 2%;
+	height: auto;
+}
+
+
+/* ZoomOut Button */
+.overlayButton {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0.5;
+    top: 5%;
+    left: 95%;
+    width: 2%;
+    height: auto;
+}
+
+.overlayButton:hover {
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+
+/* SideArea */
+#sideArea{
+    position: absolute;
+    height: 100%;
+    width: 220px;
+    top: 0px;
+    transition: 1s;
+	box-shadow: 0px 0px 6px lightgray;
+}
+
+.hide{
+    left: -220px;
+}
+
+.show{
+    left: 0px;
+}
+
+#sideBar{
+    background-color: white;
+    height: 100%;
+    width: 220px;
+}
+
+#sideMinButton{
+    background-color: lightgray;
+    position: absolute;
+    top: 50px;
+    left: 220px;
+    height: 50px;
+    width: 20px;
+	box-shadow: 1px 0px 1px gray;
+}
+
+
+/* SearchBar */
+#searchBar{
+    top: 10px;
+    left: 10px;
+    width: 200px;
+    height: 30px;
+    position: absolute;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0px 0px 6px lightblue;
+}
+
+#searchField{
+    background-color: transparent;
+    margin-left: 5px;
+    width: 190px;
+    height: 30px;
+    font-size: 10pt;
+    color: #222222;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+	border-color: transparent;
+}
+
+#searchField:focus {
+    outline-width: 0;
+}
+
+#clearText{
+    position: absolute;
+    top:30px;
+    left: 180px;
+    color:white;
+    font-size: 10pt;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    opacity: 0.5;
+}
+
+#clearText:hover {
+    text-decoration: underline;
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+
+/* Zone Text */
+.zoneDisplayName {
+    font-size: 30px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color: white;
+}

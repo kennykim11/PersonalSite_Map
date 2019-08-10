@@ -1,0 +1,24 @@
+[
+    {
+        "id": "resume",
+        "title": "My Resume",
+        "image": "",
+        "shortDescrip": "Here is my resume",
+        "description": "",
+        "link": "",
+        "zone": "Suburban",
+        "xCoord": 50,
+        "yCoord": 70
+    },
+    {
+        "id": "homeSite",
+        "title": "Personal Site Homepage",
+        "image": "",
+        "shortDescrip": "The quest to make a naviagable site without a navbar",
+        "description": "",
+        "link": "",
+        "zone": "Urban",
+        "xCoord": 1000,
+        "yCoord": 100
+    }
+]
