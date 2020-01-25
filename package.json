@@ -4,19 +4,22 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "build": "parcel build source/index.html",
-    "serve": "parcel source/index.html"
+    "build": "parcel build source/index.html source/pages/*.md source/pages/*.html",
+    "serve": "parcel source/index.html source/pages/*.html",
+    "sendit": "npm run build && gcloud app deploy -q --version=1",
+    "start": "node app.js",
+    "repin": "node repositionPins.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "animejs": "^3.0.1",
-    "parcel": "^1.12.3",
-    "vue": "^2.6.10",
-    "vue-hot-reload-api": "^2.3.3"
+    "animejs": "^3.1.0",
+    "express": "^4.17.1",
+    "parcel": "^1.12.4"
   },
   "devDependencies": {
     "@vue/component-compiler-utils": "^3.0.0",
+    "marked": "^0.7.0",
     "vue-template-compiler": "^2.6.10"
   }
 }

@@ -14,27 +14,36 @@ html, body {
     width: 100%;
     height: 100%;
     background-color: white;
-    font-family: Arial, sans-serif;
     font-weight: lighter;
     text-align: center;
-
-    /*visibility: hidden;
-    opacity: 0;*/
-    transition: visibility 0s 2s, opacity 2s linear;
 }
 
 .whiteout #topText{
     font-size: 30pt;
     padding-top: 15%;
     margin-bottom: 0pt;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;
 }
 
 .whiteout #bottomText{
     font-size: 50pt;
     bottom: 15%;
-    margin-top: 0pt;
+    margin-top: 20pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+
+/* Zone Name Element */
+#zoneTitleWrapper div{
+    position: absolute;
+    font-size: 40;
+    align-content: center;
+    transform: translate(-50%, -50%);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    opacity: 0.2;
+}
+
+/* Map */
 #mapObject {
     height: 100vh;
     width: 100vw;
@@ -42,8 +51,8 @@ html, body {
 
 
 /* Pin */
+/* Stack Overflow */
 .pinNat {
-    position: absolute;
     content: '';
     background-color: red;
     border-radius: 50% 50% 50% 0;
@@ -52,19 +61,42 @@ html, body {
     width: 20px;
     height: 20px;
     transform: rotate(-45deg);
+    margin-right: 5px;
 }
 
-.pin {
+.pinBlock {
     position: absolute;
-    width: 2%;
-	height: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    cursor: pointer;
+}
+
+.pinBlock:hover{
+    font-weight: bold;
+}
+
+.pinBlock:hover .pinNat{
+    transform: scale(1.2) rotate(-45deg);
+}
+
+.pinText p {
+    margin: 0px
+}
+
+.pinText .pinTitle {
+    font-size: 10pt;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.pinText .pinDesc {
+    font-size: 6pt;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 
 /* ZoomOut Button */
 .overlayButton {
-    position: absolute;
-    visibility: hidden;
+    position: absolute; 
     opacity: 0.5;
     top: 5%;
     left: 95%;
@@ -156,6 +188,27 @@ html, body {
     cursor: pointer;
 }
 
+.listItem{
+    border-color: grey;
+    border-width: 2px;
+    box-shadow: 0px 0px 2px lightgray;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.listItem .title{
+    margin-top: 0px;
+    margin-bottom: 6px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.listItem .shortDescrip{
+    margin-top: 6px;
+    margin-bottom: 0px;
+    font-size: 8pt;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
 
 /* Zone Text */
 .zoneDisplayName {
@@ -163,4 +216,37 @@ html, body {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
     color: white;
+}
+
+/* Full Screen */
+#fullscreenX{
+    /*background: #f90;*/
+    color: black;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    width: 40px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: 2.5%;
+    cursor: pointer;
+    /*border-radius: 5px;*/
+}
+
+#fullscreenWrapper{
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: #11111155;
+    padding: 25px;
+}
+
+#fullscreenContainer{
+    width: 96%;
+    height: 85%;
+    background-color: white;
+	box-shadow: 0px 0px 6px lightgray;
 }

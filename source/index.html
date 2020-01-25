@@ -3,15 +3,17 @@
         <title>Hello, World!</title>
         <link href="mapStyle.css" rel="stylesheet" type="text/css"/>
         <script src="map.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <!--<div class=whiteout>
+        <div class="whiteout">
             <p id=topText>Welcome to the wonderful world of</p>
             <p id=bottomText>KENNY KIM</p>
-        </div>-->
+        </div>
         <object id="mapObject" onload="loaded()" type="image/svg+xml" data="MapBackground.svg"></object>
-        <div class="pinNat" style="top:25%; left:40%"></div>
-        <img id="pin" class="pin" style="top:50%; left:50%;" src="pin.svg"></img>
+        <div id="pinCanvas"></div>
+        <div id="zoneTitleWrapper"></div>
+        <!--<img id="pin" class="pin" style="top:50%; left:50%;" src="pin.svg"></img>-->
         <img class="overlayButton" id="zoomOutButton" src="zoomOut.svg"></img>
         <div id="sideArea" class="hide">
             <span>
@@ -30,6 +32,14 @@
         </div>
         <div id="searchBar">
             <input id="searchField" type="text" placeholder="Search my site!" class="search" onkeydown="search(this)">
+        </div>
+        <div id="fullscreenWrapper" style="display: none">
+            <div id="fullscreenX" onclick="closeDetailWindow()">
+                <span id="x">X</span>
+              </div>
+            <div id="fullscreenContainer">
+                <iframe id="fullscreenIframe" width="100%" height="100%" frameBorder="0">Get a better browser.</iframe>
+            </div>
         </div>
     </body>
 </html>

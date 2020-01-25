@@ -1,0 +1,9 @@
+
+# GCP ignore file:
+.gcloudignore
+
+# Node.js dependencies:
+node_modules/
+
+# Made by parcel
+.cache

@@ -1,24 +1,156 @@
 [
     {
-        "id": "resume",
-        "title": "My Resume",
-        "image": "",
-        "shortDescrip": "Here is my resume",
-        "description": "",
-        "link": "",
-        "zone": "Suburban",
-        "xCoord": 50,
-        "yCoord": 70
-    },
-    {
         "id": "homeSite",
         "title": "Personal Site Homepage",
         "image": "",
         "shortDescrip": "The quest to make a naviagable site without a navbar",
         "description": "",
-        "link": "",
+        "link": "pages/site.html",
+        "zone": "Suburban",
+        "xCoord": 42,
+        "yCoord": 25
+    },
+    {
+        "id": "typewriterPc",
+        "title": "Sleepwriter 1000",
+        "image": "",
+        "shortDescrip": "Putting a PC in a vintage typewriter",
+        "description": "",
+        "link": "pages/typewriterPc.html",
+        "zone": "Suburban",
+        "xCoord": 30,
+        "yCoord": 80
+    },
+    {
+        "id": "nerfController",
+        "title": "Nerf FPS Controller",
+        "image": "",
+        "shortDescrip": "My first Arduino project with the ultimate first-person shooter controller",
+        "description": "",
+        "link": "pages/nerfController.html",
+        "zone": "Suburban",
+        "xCoord": 19,
+        "yCoord": 24
+    },
+    {
+        "id": "kspBoard",
+        "title": "Kerbal Space Program Control Board",
+        "image": "",
+        "shortDescrip": "A real-time physical interface for a space flight simulation game",
+        "description": "",
+        "link": "pages/kspBoard.html",
+        "zone": "Suburban",
+        "xCoord": 83,
+        "yCoord": 28
+    },
+    {
+        "id": "sandboxMod",
+        "title": "The W:RD Sandbox Mod",
+        "image": "",
+        "shortDescrip": "My first venture into programming",
+        "description": "",
+        "link": "pages/sandboxMod.html",
+        "zone": "Suburban",
+        "xCoord": 21,
+        "yCoord": 27
+    },
+    {
+        "id": "blog1",
+        "title": "Blog 1: Are Roma Romanian?",
+        "image": "",
+        "shortDescrip": "A rabbit hole into etymology",
+        "description": "",
+        "link": "pages/romani.html",
         "zone": "Urban",
-        "xCoord": 1000,
-        "yCoord": 100
+        "xCoord": 46,
+        "yCoord": 8
+    },
+    {
+        "id": "blog2",
+        "title": "Blog 2: The Hitchhiking Trip of 2019",
+        "image": "",
+        "shortDescrip": "Two weeks of adventure in the US and Canada",
+        "description": "",
+        "link": "pages/hitchhiking.html",
+        "zone": "Urban",
+        "xCoord": 37,
+        "yCoord": 26
+    },
+    {
+        "id": "blog3",
+        "title": "Blog 3: Why is America?",
+        "image": "",
+        "shortDescrip": "Just some observations about the weird state and history of the United States",
+        "description": "",
+        "link": "pages/america.html",
+        "zone": "Urban",
+        "xCoord": 37,
+        "yCoord": 62
+    },
+    {
+        "id": "blog4",
+        "title": "Blog 4: The 21st American Child",
+        "image": "",
+        "shortDescrip": "Maybe we're raising children totally wrong",
+        "description": "",
+        "link": "pages/america.html",
+        "zone": "Urban",
+        "xCoord": 11,
+        "yCoord": 77
+    },
+    {
+        "id": "music",
+        "title": "Me and Music",
+        "image": "",
+        "shortDescrip": "My adventures in music",
+        "description": "",
+        "link": "pages/music.html",
+        "zone": "Rural",
+        "xCoord": 75,
+        "yCoord": 75
+    },
+    {
+        "id": "photoGallery",
+        "title": "Photo Gallery",
+        "image": "",
+        "shortDescrip": "Some of my photos from over the years.",
+        "description": "",
+        "link": "pages/photos.html",
+        "zone": "Rural",
+        "xCoord": 25,
+        "yCoord": 25
+    },
+    {
+        "id": "resume",
+        "title": "My Resume",
+        "image": "",
+        "shortDescrip": "Here is my resume",
+        "description": "",
+        "link": "pages/resume.html",
+        "zone": "Industrial",
+        "xCoord": 59,
+        "yCoord": 67
+    },
+    {
+        "id": "contact",
+        "title": "Contact Info",
+        "image": "",
+        "shortDescrip": "This is how you can get in contact with me",
+        "description": "",
+        "link": "pages/contact.html",
+        "zone": "Industrial",
+        "xCoord": 35,
+        "yCoord": 45
+    },
+    {
+        "id": "bio",
+        "title": "Bio",
+        "image": "",
+        "shortDescrip": "A little bit about me",
+        "description": "",
+        "link": "pages/bio.html",
+        "zone": "Industrial",
+        "xCoord": 25,
+        "yCoord": 25
     }
 ]
