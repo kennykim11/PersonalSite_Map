@@ -98,9 +98,9 @@ html, body {
 .overlayButton {
     position: absolute; 
     opacity: 0.5;
-    top: 5%;
-    left: 95%;
-    width: 2%;
+    top: 10%;
+    left: 96%;
+    width: 3%;
     height: auto;
 }
 

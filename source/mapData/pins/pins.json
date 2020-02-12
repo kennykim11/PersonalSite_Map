@@ -18,8 +18,8 @@
         "description": "",
         "link": "pages/typewriterPc.html",
         "zone": "Suburban",
-        "xCoord": 30,
-        "yCoord": 80
+        "xCoord": 56,
+        "yCoord": 64
     },
     {
         "id": "nerfController",
@@ -40,8 +40,8 @@
         "description": "",
         "link": "pages/kspBoard.html",
         "zone": "Suburban",
-        "xCoord": 83,
-        "yCoord": 28
+        "xCoord": 70,
+        "yCoord": 25
     },
     {
         "id": "sandboxMod",
@@ -51,8 +51,8 @@
         "description": "",
         "link": "pages/sandboxMod.html",
         "zone": "Suburban",
-        "xCoord": 21,
-        "yCoord": 27
+        "xCoord": 18,
+        "yCoord": 45
     },
     {
         "id": "blog1",
@@ -95,7 +95,7 @@
         "description": "",
         "link": "pages/america.html",
         "zone": "Urban",
-        "xCoord": 11,
+        "xCoord": 65,
         "yCoord": 77
     },
     {
@@ -106,8 +106,8 @@
         "description": "",
         "link": "pages/music.html",
         "zone": "Rural",
-        "xCoord": 75,
-        "yCoord": 75
+        "xCoord": 62,
+        "yCoord": 57
     },
     {
         "id": "photoGallery",
