@@ -55,6 +55,17 @@
         "yCoord": 45
     },
     {
+        "id": "acVisualizer",
+        "title": "AC Visualizer",
+        "image": "",
+        "shortDescrip": "See everything about an RLC Circuit in real time!",
+        "description": "",
+        "link": "https://epic-blackwell-2c9817.netlify.com/",
+        "zone": "Suburban",
+        "xCoord": 35,
+        "yCoord": 60
+    },
+    {
         "id": "blog1",
         "title": "Blog 1: Are Roma Romanian?",
         "image": "",

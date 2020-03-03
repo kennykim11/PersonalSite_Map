@@ -2,6 +2,7 @@
 // === IMPORTS ===
 import anime from 'animejs'
 import pins from './mapData/pins/pins.json'
+import * as qs from 'querystring'
 
 // === SETTINGS ===
 const svgSize = [1920, 1080]
@@ -41,7 +42,7 @@ var fullscreenWrapper = null
 /*
 Make the intro screen disappear
 */
-function makeWhiteoutDisappear(){
+function makeWhiteoutFade(){
     anime({
         targets: '#topText',
         opacity: 0,
@@ -67,6 +68,10 @@ function makeWhiteoutDisappear(){
             anim.animatables[0].target.remove()
         }
     });
+}
+
+function noWhiteout(){
+    document.getElementsByClassName('whiteout')[0].remove()
 }
 
 /*
@@ -283,16 +288,20 @@ function makeSidebar(){
 Loads the pin page in an iframe
 */
 function detailWindow(pinObject){
-    console.log("1234")
     fullscreenWrapper.style.display = ''
     document.getElementById('fullscreenIframe').src = pinObject.link
-    const a = history.pushState({}, 'Kenneth Kim: ' + pinObject.title, pinObject.id)
-    console.log("asdf", a)
+    window.history.pushState(null, 'Kenneth Kim: ' + pinObject.title, `?page=${pinObject.id}`)
 }
 
 window.closeDetailWindow = function(){
     fullscreenWrapper.style.display = 'none'
-    history.back()
+    window.history.back()
+    console.log(location.href)
+    while (location.href.indexOf('?') != -1){
+        console.log('REPLACE')
+        window.history.replaceState(null, 'Kenneth Kim', '/') //Not working???
+        console.log(location.href)
+    }
 }
 
 // =WINDOW=
@@ -334,7 +343,15 @@ window.loaded = function(){
     }
 
     makeSidebar()
-    makeWhiteoutDisappear()
+
+    var parameters = qs.parse(location.href.split('?')[1])
+    if(parameters['page']){
+        noWhiteout()
+        detailWindow(pins.find(pin => pin.id == parameters['page']))
+    }
+    else{
+        makeWhiteoutFade()
+    }
     
     mapSvg.onmousewheel = function(e){
         //console.log("ZOOM DETECTED", event.deltaY, currentZone, mouseoverZone)
@@ -344,9 +361,4 @@ window.loaded = function(){
         if (currentZone != null && !currentlyZooming && event.deltaY > 0){
             zoomOutToMap()
     }}
-
-    if(pageId = storage.getItem('detailedPage')){
-        detailWindow(pins.find(pin => pin.id == pageId))
-    }
-    storage.setItem('detailedPage', '')
 }
