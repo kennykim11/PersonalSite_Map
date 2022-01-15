@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@vue/component-compiler-utils": "^3.0.0",
-    "marked": "^0.7.0",
+    "marked": "^4.0.10",
     "vue-template-compiler": "^2.6.10"
   }
 }
