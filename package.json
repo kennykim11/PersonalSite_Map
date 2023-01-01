@@ -16,7 +16,7 @@
   "dependencies": {
     "animejs": "^3.1.0",
     "express": "^4.17.1",
-    "parcel": "^1.12.4"
+    "parcel": "^2.8.2"
   },
   "devDependencies": {
     "@vue/component-compiler-utils": "^3.0.0",
